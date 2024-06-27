@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../images/mansui.png') no-repeat center center;
+    background-size: contain;
+    background-size: cover;
+}
+h1, ul, li {
+    color: white; /* 设置字体颜色为白色 */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), /* 外发光效果 */
+                 0 0 20px rgba(255, 255, 255, 0.6),
+                 0 0 30px rgba(255, 255, 255, 0.4);
+}
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* 半透明背景以增强可读性 */
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%; /* 响应式宽度 */
+    max-width: 600px; /* 最大宽度 */
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li.floating {
+    position: relative;
+    animation: float 2s ease-in-out infinite;
+}
+/* 添加媒体查询以确保在小屏幕上字体大小适应 */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    ul, li {
+        font-size: 18px;
+    }
+}
+/* 添加链接样式 */
+a {
+    color: white; /* 链接颜色 */
+    text-decoration: none; /* 去掉下划线 */
+}
+a:hover {
+    text-decoration: underline; /* 鼠标悬停时显示下划线 */
+}
