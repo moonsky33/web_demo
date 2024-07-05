@@ -1,0 +1,54 @@
+/* 固定网页大小 */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+/* 中心布局的游戏容器 */
+.game-container {
+    width: 320px;
+    height: 720px; /* 增加高度以适应按钮 */
+    position: relative;
+}
+
+/* 画布 */
+canvas {
+    display: block;
+    background: #000;
+    border: 1px solid #fff;
+}
+
+/* 分数显示 */
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+
+/* 控制按钮 */
+.controls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 5px 5px; /* 调整按钮的内边距 */
+    font-size: 10px;
+    cursor: pointer;
+    background-color: #ffffff; /* 设置按钮背景颜色 */
+    color: rgb(0, 0, 0); /* 设置文字颜色 */
+    border: none; /* 移除按钮边框 */
+    border-radius: 5px; /* 设置按钮圆角 */
+}
