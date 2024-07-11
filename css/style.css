@@ -51,3 +51,147 @@ a {
 a:hover {
     text-decoration: underline; /* 鼠标悬停时显示下划线 */
 }
+
+/* 侧边栏 */
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    transition: margin-left 0.3s;
+    padding: 16px;
+}
+
+.togglebtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+.togglebtn:hover {
+    background-color: #444;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    background: rgba(156, 176, 203, 0.5);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+/* 侧边栏缩进 */
+.collapsible-header:hover {
+    color: black;
+}
+
+.collapsible-content {
+    display: none;
+    padding-left: 32px; /* 缩进以显示层次感 */
+}
+
+.collapsible-content a {
+    font-size: 20px;
+    padding: 8px 8px 8px 32px; /* 进一步缩进子标题 */
+    color: #000000; /* 子标题颜色稍浅 */
+}
+/* 响应式 */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+    .sidebar a {
+        font-size: 18px;
+    }
+    #main {
+        padding: 8px;
+    }
+    .togglebtn {
+        top: 10px;
+        left: 10px;
+    }
+}
+
+/* 雨天控制按钮 */
+/* #weatherButton {
+    position:absolute;
+    top:20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#weatherButton:hover {
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+    transform: scale(1.05);
+}
+#weatherButton:active {
+    transform: scale(0.95);
+} */
+#weatherButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid transparent; /* 透明边框 */
+    border-radius: 5px;
+    background: transparent;
+    color: white; /* 图标颜色 */
+    transition: background 0.3s, transform 0.3s, border-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#weatherButton:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+#weatherButton:active {
+    transform: scale(0.95);
+}
+#weatherButton i {
+    margin-right: 10px;
+}
