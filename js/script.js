@@ -1,4 +1,24 @@
 // 侧边栏
+// function closeNav() {
+//     var sidebar = document.getElementById("sidebar");
+//     var main = document.getElementById("main");
+//     var toggleButton = document.querySelector('.togglebtn');
+//     sidebar.style.width = "0";
+//     main.style.marginLeft = "0";
+//     toggleButton.style.visibility = "visible";
+//     document.removeEventListener('click', handleOutsideClick);
+// }
+
+// function handleOutsideClick(event) {
+//     var sidebar = document.getElementById("sidebar");
+//     var toggleButton = document.querySelector('.togglebtn');
+//     if (!sidebar.contains(event.target) && sidebar.style.width === "250px") {
+//         closeNav();
+//     }
+// }
+// 侧边栏和移动端侧边栏手势
+let isSidebarOpen = false;
+
 function toggleNav() {
     var sidebar = document.getElementById("sidebar");
     var main = document.getElementById("main");
@@ -17,62 +37,7 @@ function toggleNav() {
         }, 0);
     }
 }
-function closeNav() {
-    var sidebar = document.getElementById("sidebar");
-    var main = document.getElementById("main");
-    var toggleButton = document.querySelector('.togglebtn');
-    sidebar.style.width = "0";
-    main.style.marginLeft = "0";
-    toggleButton.style.visibility = "visible";
-    document.removeEventListener('click', handleOutsideClick);
-}
 
-function handleOutsideClick(event) {
-    var sidebar = document.getElementById("sidebar");
-    var toggleButton = document.querySelector('.togglebtn');
-    if (!sidebar.contains(event.target) && sidebar.style.width === "250px") {
-        closeNav();
-    }
-}
-
-function toggleCollapsible(element) {
-    var content = element.nextElementSibling;
-    var arrow = element.querySelector('.arrow');
-    if (content.style.display === "block") {
-        content.style.display = "none";
-        arrow.classList.remove('down');
-    } else {
-        content.style.display = "block";
-        arrow.classList.add('down');
-    }
-}
-
-// 雨天控制
-document.addEventListener("DOMContentLoaded", function() {
-    const weatherButton = document.getElementById('weatherButton');
-
-    // 监听天气按钮点击事件
-    weatherButton.addEventListener('click', function() {
-        toggleRain();
-        if (rainInterval) {
-            weatherButton.textContent = '🌧';
-        } else {
-            weatherButton.textContent = '☀';
-        }
-    });
-});
-
-// 移动端侧边栏手势
-let isSidebarOpen = false;
-function toggleNav() {
-    var sidebar = document.getElementById("sidebar");
-    var main = document.getElementById("main");
-    if (sidebar.style.width === "250px") {
-        closeNav();
-    } else {
-        openNav();
-    }
-}
 function openNav() {
     var sidebar = document.getElementById("sidebar");
     var main = document.getElementById("main");
@@ -128,3 +93,17 @@ function toggleCollapsible(element) {
         arrow.classList.add('down');
     }
 }
+// 雨天控制
+document.addEventListener("DOMContentLoaded", function() {
+    const weatherButton = document.getElementById('weatherButton');
+
+    // 监听天气按钮点击事件
+    weatherButton.addEventListener('click', function() {
+        toggleRain();
+        if (rainInterval) {
+            weatherButton.textContent = '🌧';
+        } else {
+            weatherButton.textContent = '☀';
+        }
+    });
+});
