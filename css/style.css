@@ -195,3 +195,63 @@ body {
 #weatherButton i {
     margin-right: 10px;
 }
+
+/* 获取当前天气弹窗 */
+#weather2Button {
+    position: absolute;
+    top: 20px;
+    right: 80px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid transparent; 
+    border-radius: 5px;
+    background: transparent;
+    color: white; 
+    transition: background 0.3s, transform 0.3s, border-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#weather2Button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+#weather2Button:active {
+    transform: scale(0.95);
+}
+#weather2Button i {
+    margin-right: 10px;
+}
+
+.weather2-modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+}
+.weather2-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 58%;
+    border-radius: 10px;
+}
+.weather2-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.weather2-close:hover,
+.weather2-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

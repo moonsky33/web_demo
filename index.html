@@ -8,11 +8,20 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
     <script src="js/rain.js"></script>
+</head>
 <body>
 
     <div id="main">
         <button class="togglebtn" onclick="toggleNav()">☰ </button>
         <button id="weatherButton">☁</button>
+        <button id="weather2Button">🌤</button>
+    </div>
+
+    <div id="weather2Modal" class="weather2-modal">
+        <div class="weather2-modal-content">
+            <span class="weather2-close">&times;</span>
+            <iframe allowtransparency="true" frameborder="0" width="877" height="100" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=2&z=1&t=1&v=0&d=5&bd=1&k=000000&f=&ltf=009944&htf=cc0000&q=1&e=1&a=1&c=54511&w=877&h=100&align=center"></iframe>
+        </div>
     </div>
 
     <div id="sidebar" class="sidebar">
@@ -37,5 +46,4 @@
     </div>
 
 </body>
-</head>
 </html>

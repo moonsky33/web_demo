@@ -1,21 +1,3 @@
-// 侧边栏
-// function closeNav() {
-//     var sidebar = document.getElementById("sidebar");
-//     var main = document.getElementById("main");
-//     var toggleButton = document.querySelector('.togglebtn');
-//     sidebar.style.width = "0";
-//     main.style.marginLeft = "0";
-//     toggleButton.style.visibility = "visible";
-//     document.removeEventListener('click', handleOutsideClick);
-// }
-
-// function handleOutsideClick(event) {
-//     var sidebar = document.getElementById("sidebar");
-//     var toggleButton = document.querySelector('.togglebtn');
-//     if (!sidebar.contains(event.target) && sidebar.style.width === "250px") {
-//         closeNav();
-//     }
-// }
 // 侧边栏和移动端侧边栏手势
 let isSidebarOpen = false;
 
@@ -106,4 +88,22 @@ document.addEventListener("DOMContentLoaded", function() {
             weatherButton.textContent = '☀';
         }
     });
+});
+
+// 获取当前天气弹窗
+document.addEventListener("DOMContentLoaded", function() {
+    var weather2Modal = document.getElementById("weather2Modal");
+    var weather2Button = document.getElementById("weather2Button");
+    var weather2Close = document.getElementsByClassName("weather2-close")[0];
+    weather2Button.onclick = function() {
+        weather2Modal.style.display = "block";
+    }
+    weather2Close.onclick = function() {
+        weather2Modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == weather2Modal) {
+            weather2Modal.style.display = "none";
+        }
+    }
 });
