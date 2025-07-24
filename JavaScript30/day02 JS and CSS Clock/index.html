@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <title>JS and CSS Clock</title>
+    <link rel="icon" href="https://fav.farm/🔥" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="clock">
+      <div class="clock-face">
+        <div class="ticks"></div>
+        <div class="hand hour-hand"></div>
+        <div class="hand min-hand"></div>
+        <div class="hand second-hand"></div>
+      </div>
+    </div>
+    <script>
+      // 获取表盘的刻度容器
+      const ticksContainer = document.querySelector('.ticks');
+
+      // 创建 12 个刻度
+      const tickLabels = ['6', '7', '8', '9', '10', '11', '12', '1', '2', '3', '4', '5'];
+      for (let i = 0; i < 12; i++) {
+        const tick = document.createElement('div');
+        tick.classList.add('tick');
+
+        // 旋转刻度到正确的小时位置
+        tick.style.transform = `rotate(${i * 30}deg)`;
+
+        const text = document.createElement('span');
+        text.classList.add('text');
+        text.textContent = tickLabels[i];
+
+        // 计算并应用旋转角度，使文字保持垂直
+        const rotationAngle = -i * 30;
+        text.style.transform = `rotate(${rotationAngle}deg) translate(-50%, 0)`;
+
+        // 将文字添加到刻度，将刻度添加到表盘
+        tick.appendChild(text);
+        ticksContainer.appendChild(tick);
+      }
+
+      // 创建 60 个分钟刻度
+      for (let i = 0; i < 60; i++) {
+        // 排除与小时刻度重合的分钟刻度
+        if (i % 5 !== 0) {
+          const minuteTick = document.createElement('div');
+          minuteTick.classList.add('minute-tick');
+
+          // 旋转刻度到正确的位置
+          minuteTick.style.transform = ` translateX(-50%) rotate(${i * 6}deg)`;
+
+          // 将分钟刻度添加到表盘
+          ticksContainer.appendChild(minuteTick);
+        }
+      }
+
+      // 获取指针
+      const secondHand = document.querySelector('.second-hand');
+      const minHand = document.querySelector('.min-hand');
+      const hourHand = document.querySelector('.hour-hand');
+
+      function getDegrees() {
+        // 获取当前时间
+        const now = new Date();
+        // 获取时分秒
+        const milliseconds = now.getMilliseconds();
+        const seconds = now.getSeconds();
+        const mins = now.getMinutes();
+        const hour = now.getHours();
+
+        //将时分秒转换成为表盘的度数
+        //一小时--->30度
+        //一分钟--->6度
+        //一秒钟--->6度
+        const secondsDegrees = seconds * 6 + (milliseconds / 1000) * 6 + 180;
+        const minsDegrees = mins * 6 + (seconds / 60) * 6 + 180;
+        const hourDegrees = hour * 30 + (mins / 60) * 30 + 180;
+
+        //将计算好的角度，赋值给对应的针
+        secondHand.style.transform = `translateX(-50%) rotate(${secondsDegrees}deg)`;
+        minHand.style.transform = `translateX(-50%) rotate(${minsDegrees}deg)`;
+        hourHand.style.transform = `translateX(-50%) rotate(${hourDegrees}deg)`;
+      }
+
+      setInterval(getDegrees, 10);
+    </script>
+  </body>
+</html>
