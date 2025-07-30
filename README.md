@@ -7,6 +7,8 @@
 2025.7.23：JavaScript30 Day01 JavaScript Drum Kit  
 2025.7.24：JavaScript30 Day02 JS and CSS Clock  
 2025.7.25: JavaScript30 Day03 CSS Variables with JS  
-2025.7.26： JavaScript30 Day04 Array Cardio Day 1  
-2025.7.27： JavaScript30 Day05 Flex Panel Gallery  
-2025.7.28： JavaScript30 Day06 Type Ahead
+2025.7.26：JavaScript30 Day04 Array Cardio Day 1  
+2025.7.27：JavaScript30 Day05 Flex Panel Gallery  
+2025.7.28：JavaScript30 Day06 Type Ahead  
+2025.7.29: JavaScript30 Day07 Array Cardio Day 2  
+2025.7.30: JavaScript30 Day08 Fun with HTML5 Canvas
