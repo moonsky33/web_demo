@@ -25,6 +25,7 @@
       let direction = 1;
       let lastX = 0;
       let lastY = 0;
+      //   绘画函数
       function draw(e) {
         if (drawing) {
           hue >= 360 ? (hue = 0) : hue++;
@@ -32,6 +33,7 @@
             direction = -1 * direction;
           }
           lineWidth += direction;
+          //   开始路径
           ctx.beginPath();
           ctx.lineWidth = lineWidth;
           ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;

@@ -11,4 +11,5 @@
 2025.7.27：JavaScript30 Day05 Flex Panel Gallery  
 2025.7.28：JavaScript30 Day06 Type Ahead  
 2025.7.29: JavaScript30 Day07 Array Cardio Day 2  
-2025.7.30: JavaScript30 Day08 Fun with HTML5 Canvas
+2025.7.30: JavaScript30 Day08 Fun with HTML5 Canvas  
+2025.7.31：JavaScript30 Day09 Dev Tools Domination
