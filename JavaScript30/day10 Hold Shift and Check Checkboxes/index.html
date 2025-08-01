@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hold Shift to Check Multiple Checkboxes</title>
+    <link rel="icon" href="https://fav.farm/🔥" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="inbox">
+      <div class="item">
+        <input type="checkbox" />
+        <p>This is an inbox layout.</p>
+      </div>
+      <div class="item">
+        <input type="checkbox" />
+        <p>Check one item</p>
+      </div>
+      <div class="item">
+        <input type="checkbox" />
+        <p>Hold down your Shift key</p>
+      </div>
+      <div class="item">
+        <input type="checkbox" />
+        <p>Check a lower item</p>
+      </div>
+      <div class="item">
+        <input type="checkbox" />
+        <p>Everything in between should also be set to checked</p>
+      </div>
+      <div class="item">
+        <input type="checkbox" />
+        <p>Try to do it without any libraries</p>
+      </div>
+      <div class="item">
+        <input type="checkbox" />
+        <p>Just regular JavaScript</p>
+      </div>
+      <div class="item">
+        <input type="checkbox" />
+        <p>Good Luck!</p>
+      </div>
+      <div class="item">
+        <input type="checkbox" />
+        <p>Don't forget to tweet your result!</p>
+      </div>
+    </div>
+    <script>
+      const checkboxList = [...document.querySelectorAll('input[type="checkbox"]')];
+      let lastChecked = null;
+      checkboxList.forEach((checkbox) => {
+        checkbox.addEventListener('click', (e) => {
+          if (e.shiftKey && e.target.checked) {
+            const start = checkboxList.indexOf(e.target);
+            const end = checkboxList.indexOf(lastChecked);
+            checkboxList
+              .slice(Math.min(start, end), Math.max(start, end))
+              .forEach((checkbox) => (checkbox.checked = true));
+          }
+          if (e.ctrlKey) {
+            checkboxList.forEach((checkbox) => (checkbox.checked = false));
+          }
+          lastChecked = e.target;
+        });
+      });
+    </script>
+  </body>
+</html>
