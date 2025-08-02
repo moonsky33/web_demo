@@ -14,4 +14,5 @@
 2025.7.30: JavaScript30 Day08 Fun with HTML5 Canvas  
 2025.7.31：JavaScript30 Day09 Dev Tools Domination
 2025.8.1：JavaScript30 Day10 Hold Shift and Check Checkboxes  
-2025.8.2：JavaScript30 Day11 Custom Video Player
+2025.8.2：JavaScript30 Day11 Custom Video Player  
+2025.8.2：优化页面并删除天气接口

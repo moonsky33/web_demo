@@ -1,0 +1,81 @@
+/* 雨天控制按钮 */
+/* #weatherButton {
+    position:absolute;
+    top:20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#weatherButton:hover {
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+    transform: scale(1.05);
+}
+#weatherButton:active {
+    transform: scale(0.95);
+} */
+
+#weatherButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  background: transparent;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, transform 0.3s, border-color 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+#weatherButton:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+#weatherButton:active {
+  transform: scale(0.95);
+}
+
+/* 天气按钮动画效果 */
+#weatherButton.rainy {
+  animation: rainPulse 2s infinite alternate;
+}
+
+#weatherButton.sunny {
+  animation: sunShine 2s infinite alternate;
+}
+
+@keyframes rainPulse {
+  0% {
+    background: rgba(173, 216, 230, 0.2);
+    box-shadow: 0 0 10px rgba(173, 216, 230, 0.5);
+  }
+  100% {
+    background: rgba(173, 216, 230, 0.4);
+    box-shadow: 0 0 20px rgba(173, 216, 230, 0.8);
+  }
+}
+
+@keyframes sunShine {
+  0% {
+    background: rgba(255, 223, 0, 0.2);
+    box-shadow: 0 0 10px rgba(255, 223, 0, 0.5);
+  }
+  100% {
+    background: rgba(255, 223, 0, 0.4);
+    box-shadow: 0 0 20px rgba(255, 223, 0, 0.8);
+  }
+}

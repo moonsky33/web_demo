@@ -1,0 +1,226 @@
+/* 侧边栏样式 */
+/* 导入字体 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
+#main {
+  transition: margin-left 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  padding: 16px;
+}
+
+/* 侧边栏切换按钮 */
+.togglebtn {
+  font-size: 24px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50%;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.togglebtn:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  transform: scale(1.1);
+}
+
+/* 侧边栏容器 */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  overflow-x: hidden;
+  transition: width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  padding-top: 60px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* 侧边栏链接 */
+.sidebar a {
+  padding: 12px 15px 12px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  display: block;
+  transition: all 0.3s ease;
+  border-radius: 0 20px 20px 0;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.sidebar a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  padding-left: 40px;
+  color: #fff;
+}
+
+/* 关闭按钮 */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 20px;
+  margin-left: 50px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.sidebar .closebtn:hover {
+  transform: rotate(90deg);
+  color: #f8f8f8;
+}
+
+/* 折叠面板样式 */
+.collapsible-header {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.collapsible-header:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* 箭头样式 */
+.arrow {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+.arrow.down {
+  transform: rotate(135deg);
+}
+
+/* 折叠内容 */
+.collapsible-content {
+  display: none;
+  padding-left: 20px; /* 缩进以显示层次感 */
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* 折叠内容链接 */
+.collapsible-content a {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 15px 10px 40px; /* 进一步缩进子标题 */
+  color: rgba(255, 255, 255, 0.9); /* 子标题颜色稍浅 */
+}
+
+.collapsible-content a:hover {
+  padding-left: 48px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* 侧边栏链接特殊样式 */
+.sidebar-link {
+  position: relative;
+  overflow: hidden;
+}
+
+.sidebar-link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  background: linear-gradient(to bottom, #4facfe, #00f2fe);
+  transform: scaleY(0);
+  transition: transform 0.3s ease;
+}
+
+.sidebar-link:hover::before {
+  transform: scaleY(1);
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 16px;
+  }
+  .collapsible-header {
+    font-size: 18px;
+  }
+  .collapsible-content a {
+    font-size: 14px;
+  }
+  #main {
+    padding: 8px;
+  }
+  .togglebtn {
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    padding: 8px 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sidebar {
+    width: 0;
+    max-width: 250px;
+  }
+}
+
+/* 滚动条样式 */
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}

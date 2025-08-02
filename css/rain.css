@@ -1,0 +1,27 @@
+/* 雨滴效果样式 */
+#rain-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.raindrop {
+  position: absolute;
+  top: -20px;
+  width: 2px;
+  height: 20px;
+  background: #00aaff;
+  opacity: 0.5;
+  transform: rotate(180deg);
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translate(-30vw, 100vh) rotate(-20deg);
+  }
+}

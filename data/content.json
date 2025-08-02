@@ -1,0 +1,93 @@
+{
+  "content": [
+    {
+      "title": "网页小游戏",
+      "type": "game",
+      "sidebar": {
+        "show": true
+      },
+      "main": {
+        "show": true,
+        "itemDisplay": "name"
+      },
+      "items": [
+        {
+          "name": "谷歌小恐龙",
+          "path": "./games/googledrago/index.html"
+        },
+        {
+          "name": "俄罗斯方块",
+          "path": "./games/tetris/index.html"
+        }
+      ]
+    },
+    {
+      "title": "JavaScript30",
+      "type": "javascript30",
+      "sidebar": {
+        "show": true
+      },
+      "main": {
+        "show": true,
+        "itemDisplay": "dayTitle"
+      },
+      "items": [
+        {
+          "day": "01",
+          "title": "JavaScript Drum Kit",
+          "path": "./JavaScript30/day01 JavaScript Drum Kit/index.html"
+        },
+        {
+          "day": "02",
+          "title": "JS and CSS Clock",
+          "path": "./JavaScript30/day02 JS and CSS Clock/index.html"
+        },
+        {
+          "day": "03",
+          "title": "CSS Variables with JS",
+          "path": "./JavaScript30/day03 CSS Variables with JS/index.html"
+        },
+        {
+          "day": "04",
+          "title": "Array Cardio Day 1",
+          "path": "./JavaScript30/day04 Array Cardio Day 1/index.html"
+        },
+        {
+          "day": "05",
+          "title": "Flex Panel Gallery",
+          "path": "./JavaScript30/day05 Flex Panel Gallery/index.html"
+        },
+        {
+          "day": "06",
+          "title": "Type Ahead",
+          "path": "./JavaScript30/day06 Type Ahead/index.html"
+        },
+        {
+          "day": "07",
+          "title": "Array Cardio Day 2",
+          "path": "./JavaScript30/day07 Array Cardio Day 2/index.html"
+        },
+        {
+          "day": "08",
+          "title": "Fun with HTML5 Canvas",
+          "path": "./JavaScript30/day08 Fun with HTML5 Canvas/index.html"
+        },
+        {
+          "day": "09",
+          "title": "Dev Tools Domination",
+          "path": "./JavaScript30/day09 Dev Tools Domination/index.html"
+        },
+        {
+          "day": "10",
+          "title": "Hold Shift and Check Checkboxes",
+          "path": "./JavaScript30/day10 Hold Shift and Check Checkboxes/index.html"
+        },
+        {
+          "day": "11",
+          "title": "Custom Video Player",
+          "path": "./JavaScript30/day11 Custom Video Player/index.html"
+        }
+      ]
+    }
+  ]
+}

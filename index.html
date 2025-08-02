@@ -6,85 +6,25 @@
     <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1" />
     <title>Demo</title>
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/script.js"></script>
-    <script src="js/rain.js"></script>
+    <link rel="stylesheet" href="css/weather.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/rain.css" />
   </head>
   <body>
     <div id="main">
       <button class="togglebtn" onclick="toggleNav()">☰</button>
       <button id="weatherButton">☁</button>
-      <button id="weather2Button">🌤</button>
-    </div>
-
-    <div id="weather2Modal" class="weather2-modal">
-      <div class="weather2-modal-content">
-        <span class="weather2-close">&times;</span>
-        <iframe
-          allowtransparency="true"
-          frameborder="0"
-          width="877"
-          height="100"
-          scrolling="no"
-          src="//tianqi.2345.com/plugin/widget/index.htm?s=2&z=1&t=1&v=0&d=5&bd=1&k=000000&f=&ltf=009944&htf=cc0000&q=1&e=1&a=1&c=54511&w=877&h=100&align=center"
-        ></iframe>
-      </div>
     </div>
 
     <div id="sidebar" class="sidebar">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <div class="collapsible">
-        <a href="javascript:void(0)" class="collapsible-header" onclick="toggleCollapsible(this)" style="color: black">
-          网页小游戏 <span class="arrow"></span>
-        </a>
-        <div class="collapsible-content">
-          <a href="./games/googledrago/index.html">谷歌小恐龙</a>
-          <a href="./games/tetris/index.html">俄罗斯方块</a>
-        </div>
-      </div>
     </div>
 
     <div class="container">
-      <h1>网页小游戏</h1>
-      <ul>
-        <li class="floating">
-          <a href="./games/googledrago/index.html" target="_blank">谷歌小恐龙</a>
-        </li>
-        <li class="floating">
-          <a href="./games/tetris/index.html" target="_blank">俄罗斯方块</a>
-        </li>
-      </ul>
-      <h1>JavaScript30</h1>
-      <ul>
-        <li class="floating">
-          <a href="./JavaScript30/day01 JavaScript Drum Kit/index.html" target="_blank">Day01 JavaScript Drum Kit</a>
-          <p></p>
-          <a href="./JavaScript30/day02 JS and CSS Clock/index.html" target="_blank">Day02 JS and CSS Clock</a>
-          <p></p>
-          <a href="./JavaScript30/day03 CSS Variables with JS/index.html" target="_blank"
-            >Day03 CSS Variables with JS</a
-          >
-          <p></p>
-          <a href="./JavaScript30/day04 Array Cardio Day 1/index.html" target="_blank">Day04 Array Cardio Day 1</a>
-          <p></p>
-          <a href="./JavaScript30/day05 Flex Panel Gallery/index.html" target="_blank">Day05 Flex Panel Gallery</a>
-          <p></p>
-          <a href="./JavaScript30/day06 Type Ahead/index.html" target="_blank">Day06 Type Ahead</a>
-          <p></p>
-          <a href="./JavaScript30/day07 Array Cardio Day 2/index.html" target="_blank">Day07 Array Cardio Day 2</a>
-          <p></p>
-          <a href="./JavaScript30/day08 Fun with HTML5 Canvas/index.html" target="_blank"
-            >Day08 Fun with HTML5 Canvas</a
-          >
-          <p></p>
-          <a href="./JavaScript30/day09 Dev Tools Domination/index.html" target="_blank">Day09 Dev Tools Domination</a>
-          <p></p>
-          <a href="./JavaScript30/day10 Hold Shift and Check Checkboxes/index.html" target="_blank"
-            >Day10 Hold Shift and Check Checkboxes</a
-          >
-          <p></p>
-          <a href="./JavaScript30/day11 Custom Video Player/index.html" target="_blank">Day11 Custom Video Player</a>
-        </li>
-      </ul>
+      <div id="content-container"></div>
     </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/rain.js"></script>
   </body>
 </html>
