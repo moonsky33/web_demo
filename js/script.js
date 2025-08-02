@@ -201,11 +201,13 @@ let isRaining = true; // 初始状态为下雨
 document.addEventListener("DOMContentLoaded", function() {
     const weatherButton = document.getElementById('weatherButton');
 
-    // 设置按钮初始状态为下雨
-    weatherButton.textContent = '🌧';
+    // 检查按钮是否存在
+    if (weatherButton) {
+        // 设置按钮初始状态为下雨
+        weatherButton.textContent = '🌧';
 
-    // 监听天气按钮点击事件
-    weatherButton.addEventListener('click', function() {
+        // 监听天气按钮点击事件
+        weatherButton.addEventListener('click', function() {
         toggleRain();
         isRaining = !isRaining;
         
@@ -221,4 +223,5 @@ document.addEventListener("DOMContentLoaded", function() {
             weatherButton.classList.remove('rainy');
         }
     });
+    }
 });
