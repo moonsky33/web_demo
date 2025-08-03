@@ -86,6 +86,11 @@
           "day": "11",
           "title": "Custom Video Player",
           "path": "./JavaScript30/day11 Custom Video Player/index.html"
+        },
+        {
+          "day": "12",
+          "title": "Key Sequence Detection",
+          "path": "./JavaScript30/day12 Key Sequence Detection/index.html"
         }
       ]
     }
