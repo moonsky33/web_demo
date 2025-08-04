@@ -91,6 +91,11 @@
           "day": "12",
           "title": "Key Sequence Detection",
           "path": "./JavaScript30/day12 Key Sequence Detection/index.html"
+        },
+        {
+          "day": "13",
+          "title": "Slide in on Scroll",
+          "path": "./JavaScript30/day13 Slide in on Scroll/index.html"
         }
       ]
     }
