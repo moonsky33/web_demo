@@ -18,6 +18,10 @@
         {
           "name": "俄罗斯方块",
           "path": "./games/tetris/index.html"
+        },
+        {
+          "name": "2048游戏",
+          "path": "./games/2048/index.html"
         }
       ]
     },
@@ -96,7 +100,13 @@
           "day": "13",
           "title": "Slide in on Scroll",
           "path": "./JavaScript30/day13 Slide in on Scroll/index.html"
+        },
+        {
+          "day": "14",
+          "title": "JavaScript References VS Copying",
+          "path": "./JavaScript30/day14 JavaScript References VS Copying/index.html"
         }
+
       ]
     }
   ]
