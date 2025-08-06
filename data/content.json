@@ -105,8 +105,12 @@
           "day": "14",
           "title": "JavaScript References VS Copying",
           "path": "./JavaScript30/day14 JavaScript References VS Copying/index.html"
+        },
+        {
+          "day": "15",
+          "title": "LocalStorage",
+          "path": "./JavaScript30/day15 LocalStorage/index.html"
         }
-
       ]
     }
   ]
