@@ -20,4 +20,5 @@
 2025.8.4：JavaScript30 Day13 Slide in on Scroll  
 2025.8.5：JavaScript30 Day14 JavaScript References VS Copying  
 2025.8.5：2048 小游戏  
-2025.8.6：JavaScript30 Day15 LocalStorage
+2025.8.6：JavaScript30 Day15 LocalStorage  
+2025.8.7：JavaScript30 Day16 Mouse Move Shadow
