@@ -115,6 +115,11 @@
           "day": "16",
           "title": "Mouse Move Shadow",
           "path": "./JavaScript30/day16 Mouse Move Shadow/index.html"
+        },
+        {
+          "day": "17",
+          "title": "Sort Without Articles",
+          "path": "./JavaScript30/day17 Sort Without Articles/index.html"
         }
       ]
     }
