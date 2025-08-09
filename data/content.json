@@ -120,6 +120,11 @@
           "day": "17",
           "title": "Sort Without Articles",
           "path": "./JavaScript30/day17 Sort Without Articles/index.html"
+        },
+        {
+          "day": "18",
+          "title": "Adding Up Times with Reduce",
+          "path": "./JavaScript30/day18 Adding Up Times with Reduce/index.html"
         }
       ]
     }
