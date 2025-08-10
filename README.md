@@ -23,4 +23,5 @@
 2025.8.6：JavaScript30 Day15 LocalStorage  
 2025.8.7：JavaScript30 Day16 Mouse Move Shadow  
 2025.8.8：JavaScript30 Day17 Sort Without Articles  
-2025.8.9：JavaScript30 Day18 Adding Up Times with Reduce
+2025.8.9：JavaScript30 Day18 Adding Up Times with Reduce  
+2025.8.10：JavaScript30 Day19 Webcam Fun

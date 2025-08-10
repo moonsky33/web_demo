@@ -125,6 +125,11 @@
           "day": "18",
           "title": "Adding Up Times with Reduce",
           "path": "./JavaScript30/day18 Adding Up Times with Reduce/index.html"
+        },
+        {
+          "day": "19",
+          "title": "Webcam Fun",
+          "path": "./JavaScript30/day19 Webcam Fun/index.html"
         }
       ]
     }
