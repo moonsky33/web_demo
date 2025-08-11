@@ -130,6 +130,11 @@
           "day": "19",
           "title": "Webcam Fun",
           "path": "./JavaScript30/day19 Webcam Fun/index.html"
+        },
+        {
+          "day": "20",
+          "title": "Speech Detection",
+          "path": "./JavaScript30/day20 Speech Detection/index.html"
         }
       ]
     }
