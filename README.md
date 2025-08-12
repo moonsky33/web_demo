@@ -25,4 +25,5 @@
 2025.8.8：JavaScript30 Day17 Sort Without Articles  
 2025.8.9：JavaScript30 Day18 Adding Up Times with Reduce  
 2025.8.10：JavaScript30 Day19 Webcam Fun  
-2025.8.11：JavaScript30 Day20 Speech Detection
+2025.8.11：JavaScript30 Day20 Speech Detection  
+2025.8.12：JavaScript30 Day21 Geolocation

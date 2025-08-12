@@ -135,6 +135,11 @@
           "day": "20",
           "title": "Speech Detection",
           "path": "./JavaScript30/day20 Speech Detection/index.html"
+        },
+        {
+          "day": "21",
+          "title": "Geolocation",
+          "path": "./JavaScript30/day21 Geolocation/index.html"
         }
       ]
     }
