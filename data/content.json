@@ -140,6 +140,11 @@
           "day": "21",
           "title": "Geolocation",
           "path": "./JavaScript30/day21 Geolocation/index.html"
+        },
+        {
+          "day": "22",
+          "title": "Follow Along Link Highlighter",
+          "path": "./JavaScript30/day22 Follow Along Link Highlighter/index.html"
         }
       ]
     }
