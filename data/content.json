@@ -145,6 +145,11 @@
           "day": "22",
           "title": "Follow Along Link Highlighter",
           "path": "./JavaScript30/day22 Follow Along Link Highlighter/index.html"
+        },
+        {
+          "day": "23",
+          "title": "Speech Detection",
+          "path": "./JavaScript30/day23 Speech Synthesis/index.html"
         }
       ]
     }
