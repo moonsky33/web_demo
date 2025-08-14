@@ -167,6 +167,10 @@
         {
           "name": "黑马HTMLCSS学成在线",
           "path": "./heima/study/index.html"
+        },
+        {
+          "name": "黑马HTMLCSS小兔鲜儿",
+          "path": "./heima/xtx/index.html"
         }
       ]
     }
