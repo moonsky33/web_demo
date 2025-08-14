@@ -152,6 +152,23 @@
           "path": "./JavaScript30/day23 Speech Synthesis/index.html"
         }
       ]
+    },
+    {
+      "title": "b站大学",
+      "type": "Small projects",
+      "sidebar": {
+        "show": true
+      },
+      "main": {
+        "show": true,
+        "itemDisplay": "name"
+      },
+      "items": [
+        {
+          "name": "黑马HTMLCSS学成在线",
+          "path": "./heima/study/index.html"
+        }
+      ]
     }
   ]
 }
