@@ -150,6 +150,11 @@
           "day": "23",
           "title": "Speech Detection",
           "path": "./JavaScript30/day23 Speech Synthesis/index.html"
+        },
+        {
+          "day": "24",
+          "title": "Sticky Nav",
+          "path": "./JavaScript30/day24 Sticky Nav/index.html"
         }
       ]
     },
