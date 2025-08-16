@@ -155,6 +155,11 @@
           "day": "24",
           "title": "Sticky Nav",
           "path": "./JavaScript30/day24 Sticky Nav/index.html"
+        },
+        {
+          "day": "25",
+          "title": "Event Capture, Propagation, Bubbling and Once",
+          "path": "./JavaScript30/day25 Event Capture, Propagation, Bubbling and Once/index.html"
         }
       ]
     },

@@ -32,3 +32,4 @@
 2025.8.14：黑马HTMLCSS学成在线网页  
 2025.8.14：黑马HTMLCSS小兔鲜儿网页  
 2025.8.15：JavaScript30 Day24 Sticky Nav  
+2025.8.16：JavaScript30 Day25 Event Capture, Propagation, Bubbling and Once
