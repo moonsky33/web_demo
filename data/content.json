@@ -160,6 +160,11 @@
           "day": "25",
           "title": "Event Capture, Propagation, Bubbling and Once",
           "path": "./JavaScript30/day25 Event Capture, Propagation, Bubbling and Once/index.html"
+        },
+        {
+          "day": "26",
+          "title": "Stripe Follow Along Nav",
+          "path": "./JavaScript30/day26 Stripe Follow Along Nav/index.html"
         }
       ]
     },
