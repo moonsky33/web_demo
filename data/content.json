@@ -165,6 +165,11 @@
           "day": "26",
           "title": "Stripe Follow Along Nav",
           "path": "./JavaScript30/day26 Stripe Follow Along Nav/index.html"
+        },
+        {
+          "day": "27",
+          "title": "Click and Drag",
+          "path": "./JavaScript30/day27 Click and Drag/index.html"
         }
       ]
     },

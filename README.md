@@ -33,4 +33,5 @@
 2025.8.14：黑马HTMLCSS小兔鲜儿网页  
 2025.8.15：JavaScript30 Day24 Sticky Nav  
 2025.8.16：JavaScript30 Day25 Event Capture, Propagation, Bubbling and Once  
-2025.8.17：JavaScript30 Day26 Stripe Follow Along Nav
+2025.8.17：JavaScript30 Day26 Stripe Follow Along Nav  
+2025.8.18：JavaScript30 Day27 Click and Drag   
