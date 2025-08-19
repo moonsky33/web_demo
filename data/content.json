@@ -170,6 +170,11 @@
           "day": "27",
           "title": "Click and Drag",
           "path": "./JavaScript30/day27 Click and Drag/index.html"
+        },
+        {
+          "day": "28",
+          "title": "Video Speed Controller",
+          "path": "./JavaScript30/day28 Video Speed Controller/index.html"
         }
       ]
     },

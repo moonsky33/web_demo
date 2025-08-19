@@ -35,3 +35,4 @@
 2025.8.16：JavaScript30 Day25 Event Capture, Propagation, Bubbling and Once  
 2025.8.17：JavaScript30 Day26 Stripe Follow Along Nav  
 2025.8.18：JavaScript30 Day27 Click and Drag   
+2025.8.19：JavaScript30 Day28 Video Speed Controller
