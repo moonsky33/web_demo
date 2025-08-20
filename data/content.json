@@ -175,6 +175,16 @@
           "day": "28",
           "title": "Video Speed Controller",
           "path": "./JavaScript30/day28 Video Speed Controller/index.html"
+        },
+        {
+          "day": "29",
+          "title": "Countdown Timer",
+          "path": "./JavaScript30/day29 Countdown Timer/index.html"
+        },
+        {
+          "day": "30",
+          "title": "Whack A Mole",
+          "path": "./JavaScript30/day30 Whack A Mole/index.html"
         }
       ]
     },
